@@ -12,7 +12,8 @@
 		"vscode": "^1.53.0"
 	},
 	"dependencies": {
-		"vscode-languageclient": "^7.0.0"
+		"vscode-languageclient": "^7.0.0",
+		"swamp-compiler": "^0.0.1"
 	},
 	"categories": [
 		"Other"
@@ -22,6 +23,16 @@
 	],
 	"main": "./dist/extension",
 	"contributes": {
+		"configuration": {
+			"title": "Swamp",
+			"properties": {
+				"swamp.usePackagedCompiler": {
+					"type": "boolean",
+					"default": true,
+					"description": "Use the included compiler."
+				}
+			}
+		},
 		"commands": [
 			{
 				"command": "swamp.compile",
@@ -38,6 +49,13 @@
 					"Swamp",
 					"swamp"
 				]
+			}
+		],
+		"themes": [
+			{
+				"label": "Swamp Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/swamp-dark-color-theme.json"
 			}
 		]
 	},
@@ -66,5 +84,10 @@
 		"vscode-test": "^1.5.0",
 		"webpack": "^5.24.2",
 		"webpack-cli": "^4.5.0"
+	},
+	"__metadata": {
+		"id": "6ca299fe-9411-4ca2-9e87-886fc74f7236",
+		"publisherDisplayName": "Swamp",
+		"publisherId": "4a650cac-d277-49c9-9f44-7e7d30428744"
 	}
 }
