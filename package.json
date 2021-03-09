@@ -2,7 +2,7 @@
 	"name": "swamp",
 	"displayName": "swamp",
 	"description": "Support for the Swamp language",
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"publisher": "swamp",
 	"repository": {
 		"type": "git",
