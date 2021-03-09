@@ -6,8 +6,11 @@
 		"editor.foreground": "#eeffff",
 		"activityBarBadge.background": "#7c9cb1",
 		"sideBarTitle.foreground": "#bbbbbb",
-		"editor.selectionHighlightBackground": "#5f5d5c",
+		"editor.selectionHighlightBackground": "#636262",
+		"editor.selectionHighlightBorder": "#686564",
+		"contrastBorder":"#555555",
 		"editor.findMatchHighlightBackground": "#d48e55",
+		"editor.lineHighlightBorder":"#404040"
 	},
 	"semanticTokenColors": {
 		"variable.readonly": "#7ea8d1",
