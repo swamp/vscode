@@ -2,7 +2,7 @@
 	"name": "swamp",
 	"displayName": "swamp",
 	"description": "Support for the Swamp language",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "swamp",
 	"repository": {
 		"type": "git",
@@ -84,10 +84,5 @@
 		"vscode-test": "^1.5.0",
 		"webpack": "^5.24.2",
 		"webpack-cli": "^4.5.0"
-	},
-	"__metadata": {
-		"id": "6ca299fe-9411-4ca2-9e87-886fc74f7236",
-		"publisherDisplayName": "Swamp",
-		"publisherId": "4a650cac-d277-49c9-9f44-7e7d30428744"
 	}
 }
