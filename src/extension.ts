@@ -7,30 +7,34 @@ import {
 } from 'vscode-languageclient/node';
 import { join } from 'path';
 
-import * as swamp_compiler from 'swamp-compiler';
-
 let client: LanguageClient;
 
-
-function startServer(_context: vscode.ExtensionContext) {
-	console.log(`swamp: start server`);
-	/*
+function platformSpecificExePath(name :string) : string {
 	const installPath = vscode.extensions.getExtension("swamp.swamp")?.extensionPath ?? '';
 	if (installPath === '') {
 		console.error("problem with install path");
 	}
 
 	const binPath = join(installPath, 'node_modules/swamp-compiler/resources/');
-	console.log(`my install path is '${binPath}'`);
-*/
+	const platform = process.platform
+	const platformBin = join(binPath, platform);
+	const platformExe = join(platformBin, name);
+	console.log(`swamp: platform specific binary path '${platformBin}'`);
+
+	return platformExe;
+}
+
+function startServer(_context: vscode.ExtensionContext) {
+	console.log(`swamp: start server`);
+
 
 	const settings = vscode.workspace.getConfiguration('swamp');
 	const shouldUsePackageCompiler = settings.get<boolean>("usePackagedCompiler");
 
 	let compilerPath = "swamp";
 	if (shouldUsePackageCompiler) {
-		console.log(`trying to use included swamp`, swamp_compiler.platform_path_to_executable);
-		compilerPath = swamp_compiler.platform_path_to_executable('swamp');
+		// For unknown reason we can not use the code in swamp-compiler package to detect its own path.
+		compilerPath = platformSpecificExePath('swamp');
 		console.log(`path is ${compilerPath}`);
 	}
 
