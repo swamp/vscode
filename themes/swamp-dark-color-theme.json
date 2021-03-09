@@ -6,35 +6,37 @@
 		"editor.foreground": "#eeffff",
 		"activityBarBadge.background": "#7c9cb1",
 		"sideBarTitle.foreground": "#bbbbbb",
-		"editor.selectionHighlightBackground": "#9c9690",
+		"editor.selectionHighlightBackground": "#5f5d5c",
 		"editor.findMatchHighlightBackground": "#d48e55",
 	},
 	"semanticTokenColors": {
 		"variable.readonly": "#7ea8d1",
 		"namespace": {
 			"fontStyle": "italic",
-			"foreground": "#9589ff"
+			"foreground": "#86e6e2"
 		},
-		"function": "#a0dfa0",
-		"function.declaration": "#e0ffb0",
+		"function": "#649c95",
+		"function.declaration": "#649c95",
 		"parameter": {
 			"fontStyle": "bold",
-			"foreground": "#d3f054"
+			"foreground": "#8eb8e1"
 		},
 		"property": {
 			"fontStyle": "italic",
-			"foreground": "#94af76"
+			"foreground": "#9e7cbb"
 		},
-		"number": "#ff00ffaa",
+		"number": "#d29b66",
 		"enum": "#ff88ffaa",
-		"enumMember": "#3388ffaa",
-		"class": "#88ffaa",
-		"keyword": "#fbd0ff",
-		"string": "#eeffcc",
-		"macro": "#ffeebb",
+		"enumMember": "#fbb377",
+		"class": "#e5c37c",
+		"keyword": "#e6b5ed",
+		"string": "#99c173",
+		"macro": "#967197",
 		"type": "#ff0000",
-		"type.declaration": "#ff44ff",
-		"type.declaration.defaultLibrary": "#00ff00",
+		"typeParameter": "#c6f4f1",
+		"type.declaration": "#56b4c1",
+		"type.declaration.defaultLibrary": "#76e4e1",
+		"comment": "#67be73",
 	},
 	"tokenColors": [
 		{
