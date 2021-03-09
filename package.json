@@ -13,7 +13,7 @@
 	},
 	"dependencies": {
 		"vscode-languageclient": "^7.0.0",
-		"swamp-compiler": "^0.0.1"
+		"swamp-compiler": "0.0.2-alpha-07"
 	},
 	"categories": [
 		"Other"

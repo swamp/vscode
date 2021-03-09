@@ -5,11 +5,36 @@ import {
 	ServerOptions,
 	Executable,
 } from 'vscode-languageclient/node';
+import { join } from 'path';
+
+import * as swamp_compiler from 'swamp-compiler';
 
 let client: LanguageClient;
 
+
 function startServer(_context: vscode.ExtensionContext) {
-	let swampExecutable: Executable = { command: "swamp", args: ["lsp"] };
+	console.log(`swamp: start server`);
+	/*
+	const installPath = vscode.extensions.getExtension("swamp.swamp")?.extensionPath ?? '';
+	if (installPath === '') {
+		console.error("problem with install path");
+	}
+
+	const binPath = join(installPath, 'node_modules/swamp-compiler/resources/');
+	console.log(`my install path is '${binPath}'`);
+*/
+
+	const settings = vscode.workspace.getConfiguration('swamp');
+	const shouldUsePackageCompiler = settings.get<boolean>("usePackagedCompiler");
+
+	let compilerPath = "swamp";
+	if (shouldUsePackageCompiler) {
+		console.log(`trying to use included swamp`, swamp_compiler.platform_path_to_executable);
+		compilerPath = swamp_compiler.platform_path_to_executable('swamp');
+		console.log(`path is ${compilerPath}`);
+	}
+
+	let swampExecutable: Executable = { command: compilerPath, args: ["lsp"] };
 
 	let serverOptions: ServerOptions = {
 		run: swampExecutable,
