@@ -16,7 +16,7 @@
 		"variable.readonly": "#7ea8d1",
 		"namespace": {
 			"fontStyle": "italic",
-			"foreground": "#86e6e2"
+			"foreground": "#3ff3ea"
 		},
 		"function": "#649c95",
 		"function.declaration": "#649c95",
@@ -28,15 +28,16 @@
 			"fontStyle": "italic",
 			"foreground": "#9e7cbb"
 		},
-		"number": "#d29b66",
-		"enum": "#ff88ffaa",
-		"enumMember": "#fbb377",
-		"class": "#e5c37c",
+		"number": "#e7d672",
+		"enum": "#fd77b5fd",
+		"enumMember": "#ff71b4aa",
+		"class": "#ad8f4c",
 		"keyword": "#e6b5ed",
 		"string": "#99c173",
-		"macro": "#967197",
+		"macro": "#06b6fb",
 		"type": "#ff0000",
-		"typeParameter": "#c6f4f1",
+		"typeParameter": "#78f0e8",
+		"typeParameter.declaration": "#e5faf5",
 		"type.declaration": "#56b4c1",
 		"type.declaration.defaultLibrary": "#76e4e1",
 		"comment": "#67be73",
