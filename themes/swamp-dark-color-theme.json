@@ -1,6 +1,7 @@
 {
 	"name": "Swamp Dark",
 	"type": "dark",
+	"semanticHighlighting" : true,
 	"colors": {
 		"editor.background": "#353434",
 		"editor.foreground": "#eeffff",
