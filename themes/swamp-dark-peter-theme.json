@@ -1,5 +1,5 @@
 {
-	"name": "Swamp Dark",
+	"name": "Swamp Dark Peter",
 	"type": "dark",
 	"semanticHighlighting" : true,
 	"colors": {
@@ -14,34 +14,36 @@
 		"editor.lineHighlightBorder":"#404040"
 	},
 	"semanticTokenColors": {
-		"variable.readonly": "#7ea8d1",
+		"variable.readonly": "#8eb8e1",
 		"namespace": {
 			"fontStyle": "italic",
-			"foreground": "#3ff3ea"
+			"foreground": "#D6EADF"
 		},
-		"function": "#649c95",
-		"function.declaration": "#649c95",
+		"function": "#a3c4bc",
+		"function.declaration": "#a3c4bc",
 		"parameter": {
 			"fontStyle": "bold",
 			"foreground": "#8eb8e1"
 		},
 		"property": {
 			"fontStyle": "italic",
-			"foreground": "#9e7cbb"
+			"foreground": "#BE95C4"
 		},
-		"number": "#e7d672",
-		"enum": "#fd77b5fd",
-		"enumMember": "#ff71b4aa",
-		"class": "#ad8f4c",
-		"keyword": "#e6b5ed",
+		"number": "#f7e682",
+		"enum": "#FFDAB9",
+		"enumMember": "#F4978E",
+		"class": "#e2cd94",
+		"keyword": "#eac4d5",
 		"string": "#99c173",
 		"macro": "#06b6fb",
-		"type": "#ff0000",
 		"typeParameter": "#78f0e8",
 		"typeParameter.declaration": "#e5faf5",
 		"type.declaration": "#56b4c1",
 		"type.declaration.defaultLibrary": "#76e4e1",
-		"comment": "#67be73",
+		"comment": {
+			"fontStyle": "normal",
+			"foreground": "#588157"
+		}
 	},
 	"tokenColors": [
 		{

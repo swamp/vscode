@@ -2,7 +2,7 @@
 	"name": "swamp",
 	"displayName": "swamp",
 	"description": "Support for the Swamp language",
-	"version": "0.0.12",
+	"version": "0.0.13",
 	"publisher": "swamp",
 	"repository": {
 		"type": "git",
@@ -58,9 +58,9 @@
 				"path": "./themes/swamp-dark-ossian-theme.json"
 			},
 			{
-				"label": "Swamp Dark",
+				"label": "Swamp Dark Peter",
 				"uiTheme": "vs-dark",
-				"path": "./themes/swamp-dark-color-theme.json"
+				"path": "./themes/swamp-dark-peter-theme.json"
 			}
 		]
 	},
