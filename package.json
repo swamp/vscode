@@ -53,6 +53,11 @@
 		],
 		"themes": [
 			{
+				"label": "Swamp Dark Ossian",
+				"uiTheme": "vs-dark",
+				"path": "./themes/swamp-dark-ossian-theme.json"
+			},
+			{
 				"label": "Swamp Dark",
 				"uiTheme": "vs-dark",
 				"path": "./themes/swamp-dark-color-theme.json"
