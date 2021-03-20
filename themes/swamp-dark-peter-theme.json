@@ -4,14 +4,15 @@
 	"semanticHighlighting" : true,
 	"colors": {
 		"editor.background": "#353434",
-		"editor.foreground": "#eeffff",
+		"editor.foreground": "#eeeeee",
 		"activityBarBadge.background": "#7c9cb1",
 		"sideBarTitle.foreground": "#bbbbbb",
 		"editor.selectionHighlightBackground": "#636262",
 		"editor.selectionHighlightBorder": "#686564",
 		"contrastBorder":"#555555",
 		"editor.findMatchHighlightBackground": "#d48e55",
-		"editor.lineHighlightBorder":"#404040"
+		"editor.lineHighlightBorder":"#404040",
+		"statusBar.background":"#555464"
 	},
 	"semanticTokenColors": {
 		"variable.readonly": "#8eb8e1",
@@ -42,7 +43,7 @@
 		"type.declaration.defaultLibrary": "#76e4e1",
 		"comment": {
 			"fontStyle": "normal",
-			"foreground": "#588157"
+			"foreground": "#888888"
 		}
 	},
 	"tokenColors": [

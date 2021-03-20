@@ -16,7 +16,7 @@ function platformSpecificExePath(name :string) : string {
 	}
 
 	const binPath = join(installPath, 'node_modules/swamp-compiler/resources/');
-	const platform = process.platform
+	const platform = process.platform;
 	const platformBin = join(binPath, platform);
 	const platformExe = join(platformBin, name);
 	console.log(`swamp: platform specific binary path '${platformBin}'`);

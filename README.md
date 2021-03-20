@@ -21,3 +21,4 @@
 * Select `run/run without debugging` from the menu. (usually mapped to `Ctrl+F5`).
 * Running will open a separate editor window with the plugin running.
 * Change the colors in your theme file and press save and the colors should be changed instantly.
+* Reference for [theme colors](https://code.visualstudio.com/api/references/theme-color)
