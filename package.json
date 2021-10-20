@@ -28,7 +28,7 @@
 			"properties": {
 				"swamp.usePackagedCompiler": {
 					"type": "boolean",
-					"default": true,
+					"default": false,
 					"description": "Use the included compiler."
 				}
 			}
