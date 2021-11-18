@@ -12,7 +12,7 @@
 		"editor.foreground": "#eeeeee",
 		"editor.selectionHighlightBackground": "#636262",
 		"editor.selectionHighlightBorder": "#686564",
-		"editor.findMatchHighlightBackground": "#d48e55",
+		"editor.findMatchHighlightBackground": "#aaaaaa",
 		"editor.lineHighlightBorder": "#404040",
 		"editor.hoverHighlightBackground": "#eeeeee44"
 	},

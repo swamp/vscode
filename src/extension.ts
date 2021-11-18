@@ -63,11 +63,34 @@ function startServer(_context: vscode.ExtensionContext) {
 	console.log('swamp: started client');
 }
 
+
+function getProjectFolder() {
+	let path: string;
+	if (!vscode.workspace.workspaceFolders) {
+		path = vscode.workspace.rootPath || '';
+	} else {
+		let root: vscode.WorkspaceFolder | undefined;
+		if (vscode.workspace.workspaceFolders.length === 1) {
+			root = vscode.workspace.workspaceFolders[0];
+		} else {
+			root = undefined; // vscode.workspace.getWorkspaceFolder(resource);
+		}
+
+		path = root?.uri.fsPath || '';
+	}
+
+	return path
+}
+
 export function activate(context: vscode.ExtensionContext) {
 	console.log('swamp: extension is now active');
 
 	let disposable = vscode.commands.registerCommand('swamp.compile', () => {
 		vscode.window.showInformationMessage('Compiling Swamp');
+		const terminal = vscode.window.createTerminal(`Swamp Compile Terminal`);
+		const path = getProjectFolder();
+		terminal.show(false);
+    	terminal.sendText(`swamp build ${path} -o ${path}/../data `);
 	});
 
 	context.subscriptions.push(disposable);
