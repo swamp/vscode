@@ -2,14 +2,14 @@
 	"name": "swamp",
 	"displayName": "swamp",
 	"description": "Support for the Swamp language",
-	"version": "0.0.19",
+	"version": "0.0.20",
 	"publisher": "swamp",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/swamp/vscode.git"
 	},
 	"engines": {
-		"vscode": "^1.66.0"
+		"vscode": "^1.65.0"
 	},
 	"dependencies": {
 		"swamp-compiler": "^0.0.4",
@@ -79,7 +79,7 @@
 		"@types/glob": "^7.2.0",
 		"@types/mocha": "^9.1.0",
 		"@types/node": "^17.0.23",
-		"@types/vscode": "^1.66.0",
+		"@types/vscode": "^1.65.0",
 		"@typescript-eslint/eslint-plugin": "^5.18.0",
 		"@typescript-eslint/parser": "^5.18.0",
 		"eslint": "^8.12.0",
