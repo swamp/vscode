@@ -2,7 +2,7 @@
 	"name": "swamp",
 	"displayName": "swamp",
 	"description": "Support for the Swamp language",
-	"version": "0.0.20",
+	"version": "0.0.21",
 	"publisher": "swamp",
 	"repository": {
 		"type": "git",
@@ -13,7 +13,7 @@
 	},
 	"dependencies": {
 		"swamp-compiler": "^0.0.4",
-		"vscode-languageclient": "^7.0.0"
+		"vscode-languageclient": "^8.0.2"
 	},
 	"categories": [
 		"Other"
@@ -76,19 +76,19 @@
 		"package": "vsce package"
 	},
 	"devDependencies": {
-		"@types/glob": "^7.2.0",
-		"@types/mocha": "^9.1.0",
-		"@types/node": "^17.0.23",
+		"@types/glob": "^8.0.0",
+		"@types/mocha": "^9.1.1",
+		"@types/node": "^18.7.22",
 		"@types/vscode": "^1.65.0",
-		"@typescript-eslint/eslint-plugin": "^5.18.0",
-		"@typescript-eslint/parser": "^5.18.0",
-		"eslint": "^8.12.0",
-		"glob": "^7.2.0",
-		"mocha": "^9.2.2",
-		"ts-loader": "^9.2.8",
-		"typescript": "^4.6.3",
+		"@typescript-eslint/eslint-plugin": "^5.38.1",
+		"@typescript-eslint/parser": "^5.38.1",
+		"eslint": "^8.24.0",
+		"glob": "^8.0.3",
+		"mocha": "^10.0.0",
+		"ts-loader": "^9.4.1",
+		"typescript": "^4.8.3",
 		"vscode-test": "^1.5.0",
-		"webpack": "^5.71.0",
-		"webpack-cli": "^4.9.2"
+		"webpack": "^5.74.0",
+		"webpack-cli": "^4.10.0"
 	}
 }
